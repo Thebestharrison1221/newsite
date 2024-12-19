@@ -28,7 +28,7 @@
     }
 
     .hero {
-      margin: 100px auto;
+      margin: 50px auto;
       padding: 20px;
     }
 
@@ -46,6 +46,7 @@
     .hero p {
       font-size: 20px;
       margin: 10px 0 30px;
+      color: #aaa;
     }
 
     .hero button {
@@ -62,15 +63,19 @@
       display: flex;
       justify-content: center;
       gap: 20px;
-      margin-top: 50px;
+      margin: 30px auto;
+      max-width: 900px;
     }
 
     .card {
       background: #10142a;
       border-radius: 10px;
       padding: 20px;
-      width: 300px;
+      width: 250px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .card.locked {
@@ -79,16 +84,6 @@
 
     .card.locked:hover {
       cursor: not-allowed;
-    }
-
-    .card .title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      font-size: 16px;
     }
 
     .card .tag {
@@ -101,6 +96,41 @@
       margin-bottom: 10px;
     }
 
+    .card .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #bbb;
+      text-align: center;
+    }
+
+    .about {
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 800px;
+      line-height: 1.6;
+      color: #aaa;
+    }
+
+    .about strong {
+      color: #fff;
+    }
+
+    .about button {
+      margin-top: 20px;
+      background-color: #4c7eff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
     .footer {
       margin-top: 50px;
       padding: 20px;
@@ -108,7 +138,7 @@
 
     .footer span {
       font-size: 14px;
-      color: #aaa;
+      color: #555;
     }
   </style>
 </head>
@@ -130,22 +160,28 @@
 
   <div class="cards">
     <div class="card locked">
-      <p class="tag">Locked</p>
+      <p class="tag">Locked 🔒</p>
       <p class="title">Not coming soon..</p>
       <p>No spoilers.</p>
     </div>
 
     <div class="card">
-      <p class="tag">Most Popular</p>
+      <p class="tag">Most Popular 🌟</p>
       <p class="title">Store</p>
       <p>Drag & drop animations easily customizable with the ccLeaf Editor!</p>
     </div>
 
     <div class="card locked">
-      <p class="tag">Locked</p>
+      <p class="tag">Locked 🔒</p>
       <p class="title">Not coming soon..</p>
       <p>No spoilers.</p>
     </div>
+  </div>
+
+  <div class="about">
+    <p><strong>ccLeaf specializes</strong> in animating & editing. We help content creators by offering tailored services to elevate their content effortlessly.</p>
+    <p><strong>Our goal</strong> is to make content creation easier, whether you're a YouTuber, podcaster, or social media person. Additionally, we provide affordable, easy drag-and-drop animations for creators on tight schedules or limited budgets.</p>
+    <button>View all updates</button>
   </div>
 
   <footer class="footer">
