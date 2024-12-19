@@ -1,1 +1,122 @@
-s
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ccLeaf</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #0b0d1e, #090c1a);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      align-items: center;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 16px;
+    }
+
+    .hero {
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: #10142a;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .card.locked {
+      opacity: 0.5;
+    }
+
+    .card.locked:hover {
+      cursor: not-allowed;
+    }
+
+    .card .title {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .footer {
+      margin-top: 50px;
+      padding: 20px;
+    }
+
+    .footer span {
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">ccLeaf</a>
+    <nav>
+      <a href="#">Updates</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Enhance your vision</h1>
+    <p>We offer a variety of services and products to make your vision come to life.</p>
+    <button>What is ccLeaf?</button>
+  </div>
+
+  <div class="cards">
+    <div class="card locked">
+      <p class="title">Locked</p>
+      <p>Not coming soon... No spoilers.</p>
+    </div>
+
+    <div class="card">
+      <p class="title">Store</p>
+      <p>Drag & drop animations easily customizable with the ccLeaf Editor!</p>
+    </div>
+
+    <div class="card locked">
+      <p class="title">Locked</p>
+      <p>Not coming soon... No spoilers.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>&copy; 2024 ccLeaf</span>
+  </footer>
+</body>
+</html>
