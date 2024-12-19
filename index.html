@@ -16,19 +16,19 @@
     header {
       display: flex;
       justify-content: space-between;
-      padding: 20px;
       align-items: center;
+      padding: 20px 50px;
     }
 
     header a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
       font-size: 16px;
     }
 
     .hero {
-      margin: 50px auto;
+      margin: 100px auto;
       padding: 20px;
     }
 
@@ -36,11 +36,26 @@
       font-size: 48px;
       font-weight: bold;
       color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 span {
+      color: #4c7eff;
     }
 
     .hero p {
       font-size: 20px;
-      margin: 10px 0;
+      margin: 10px 0 30px;
+    }
+
+    .hero button {
+      background-color: #4c7eff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
     }
 
     .cards {
@@ -54,12 +69,12 @@
       background: #10142a;
       border-radius: 10px;
       padding: 20px;
-      width: 250px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
     }
 
     .card.locked {
-      opacity: 0.5;
+      opacity: 0.4;
     }
 
     .card.locked:hover {
@@ -67,8 +82,23 @@
     }
 
     .card .title {
-      font-size: 20px;
-      margin-bottom: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 16px;
+    }
+
+    .card .tag {
+      display: inline-block;
+      background-color: #4c7eff;
+      color: white;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      margin-bottom: 10px;
     }
 
     .footer {
@@ -93,25 +123,28 @@
   </header>
 
   <div class="hero">
-    <h1>Enhance your vision</h1>
+    <h1>Enhance <span>your vision</span> 💡</h1>
     <p>We offer a variety of services and products to make your vision come to life.</p>
     <button>What is ccLeaf?</button>
   </div>
 
   <div class="cards">
     <div class="card locked">
-      <p class="title">Locked</p>
-      <p>Not coming soon... No spoilers.</p>
+      <p class="tag">Locked</p>
+      <p class="title">Not coming soon..</p>
+      <p>No spoilers.</p>
     </div>
 
     <div class="card">
+      <p class="tag">Most Popular</p>
       <p class="title">Store</p>
       <p>Drag & drop animations easily customizable with the ccLeaf Editor!</p>
     </div>
 
     <div class="card locked">
-      <p class="title">Locked</p>
-      <p>Not coming soon... No spoilers.</p>
+      <p class="tag">Locked</p>
+      <p class="title">Not coming soon..</p>
+      <p>No spoilers.</p>
     </div>
   </div>
 
